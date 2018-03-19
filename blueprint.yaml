@@ -7,10 +7,10 @@ imports:
 inputs:
 
   agent_user:
-    default: ubuntu
+    default: root
 
   agent_key_path:
-    default: ~/.ssh/kubernetes-aws-key.pem 
+    default: /root/pna/minikube.pem
 
   kubernetes_master_ip:
     type: string
@@ -44,12 +44,8 @@ node_types:
 
 node_templates:
 
-  mongo_server:
+  nginx:
     type: kubernetes.application
     properties:
-      config_path: 'mongo-service.yaml'
+      config_path: 'nginx.yaml'
 
-  mongo_controller:
-    type: kubernetes.application
-    properties:
-      config_path: 'mongo-controller.yaml'

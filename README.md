@@ -1,6 +1,6 @@
 # kubernetes-example-blueprint
 
-Use Cloudify to deploy Mongo using Kubernetes
+Use Cloudify to deploy nginx using Kubernetes
 
 ## Requirements
 
